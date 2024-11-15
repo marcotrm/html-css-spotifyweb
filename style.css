@@ -19,6 +19,45 @@ body{
 .vh{
     height: calc(100vh - 80px);
 }
+
+.container{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.top-main{
+    min-height: 90px;
+    background-color: #080B12;
+    text-align: right;
+    padding-top: 20px;
+}
+
+.btn{
+    background-color: #080B12;
+    border: 2px solid white;
+    border-radius: 30px;
+    color: white;
+    padding: 15px 40px;
+    font-size: 12px;
+}
+
+.col-img{
+    width: calc(100% / 6 - 16px);
+}
+
+.gap{
+    gap: 15px;
+}
+
+.bd-r{
+    border-radius: 100%;
+}
+
+.row{
+    width: 100%;
+    flex-wrap: wrap;
+}
 /* GENERAL */
 
 /* TYPO */
@@ -27,6 +66,18 @@ h1{
     padding-left: 10px;
     font-size: 20px;
     margin-top: 25px;
+}
+
+h2{
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+h4{
+    color: white;
+    font-size: 15px;
+    padding-top: 15px;
 }
 /* TYPO */
 
@@ -158,6 +209,47 @@ main{
     overflow-y: auto;
     flex-grow: 1;
 }
+
+main::-webkit-scrollbar{
+    display: none;
+}
+
+.list ul{
+    list-style: none;
+    text-align: center;
+    gap: 10px;
+    justify-content: center;
+    display: flex;
+    padding-top: 10px;
+}
+
+nav li{
+    color: #7A7C81;
+}
+
+.description-img{
+    text-align: center;
+}
+
+.description-img span{
+    color: #7A7C81;
+    font-size: 12px;
+}
+
+.container h2{
+    padding-bottom: 20px;
+}
+
+.container span{
+    color: #7A7C81;
+    font-size: 12px;
+}
+
+.container p{
+    padding-bottom: 15px;
+    color: #7A7C81;
+    font-size: 12px;
+}
 /* MAIN */
 
 /* FOOTER */
@@ -173,6 +265,21 @@ footer{
 /* FOOTER */
 
 /* RESPONSIVE */
+@media screen and (max-width:880px){
+
+    .col-img{
+        width: calc(100% / 4 - 16px);
+    }
+    
+}
+
+@media screen and (max-width:630px){
+
+    .col-img{
+        width: calc(100% / 2 - 16px);
+    }
+}
+
 @media screen and (max-width:530px){
 
     header{
@@ -227,10 +334,7 @@ footer{
     main::-webkit-scrollbar{
         display: none;
     }
-}
 
-@media screen and (min-width:900px){
-    
 }
 /* RESPONSIVE */
 
