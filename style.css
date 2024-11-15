@@ -5,3 +5,232 @@
     padding: 0;
 }
 /* RESET */
+
+/* GENERAL */
+.flex{
+    display: flex;
+}
+
+body{
+    font-family: "DM Sans", sans-serif;
+    height: 100vh;
+}
+
+.vh{
+    height: calc(100vh - 80px);
+}
+/* GENERAL */
+
+/* TYPO */
+h1{
+    color: white;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-top: 25px;
+}
+/* TYPO */
+
+/* HEADER */
+header{
+    width: 230px;
+    background-color: #000000;
+    flex-shrink: 0;
+}
+
+header:hover{
+    overflow-y: scroll;
+    transition-duration: 0.7s;
+}
+
+.logo{
+    padding: 25px 0;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+
+.logo-small{
+    display:none;
+    width: 70%;
+
+}
+
+.home ul{
+    list-style: none;
+    color: #717171;
+}
+
+.home ul li:first-child{
+    color: white;
+}
+
+.home li {
+    margin-bottom: 10px;
+}
+
+.home img {
+    vertical-align: middle;
+}
+
+.playlist-container{
+    margin-top: 10px;
+}
+
+.square-w{
+    height: 40px;
+    width: 40px;
+    background-color: #717171;
+    text-align: center;
+    line-height: 35px;
+    font-size: 41px;
+    cursor: default;
+}
+
+.playlist-container p{
+    color: #717171;
+    font-size: 16px;
+    line-height: 40px;
+    margin-left: 5px;
+    cursor: default;
+}
+
+.play-list li{
+    color: #717171;
+    margin-top: 10px;
+    list-style: none;
+    font-size: 13px;
+}
+
+.header-top{
+    height: calc(100vh - 80px);
+    margin-left: 20px;
+}
+
+.header-bottom{
+    height: 80px;
+    margin-left: 20px;
+}
+
+.header-bottom a img{
+    vertical-align: sub;
+    margin-right: 5px;
+    color: #717171;
+}
+
+.header-bottom a{
+    text-decoration: none;
+    color: #717171;
+}
+
+.header-bottom hr{
+    margin: 10px 0;
+    width: 170px;
+    border-color: #717171;
+}
+
+.circle{
+    height: 25px;
+    width: 25px;
+    background-color: #717171;
+    border-radius: 100%;
+    text-align: center;
+}
+
+.circle img{
+    width: 73%;
+}
+
+.profile{
+    color: #717171;
+}
+
+.mtrm{
+    margin-left: 7px;
+    color: white;
+}
+/* HEADER */
+
+/* MAIN */
+main{
+    background-color: #141922;
+    overflow-y: auto;
+    flex-grow: 1;
+}
+/* MAIN */
+
+/* FOOTER */
+footer{
+    min-height: 90px;
+    background-color: #282828;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+}
+
+/* FOOTER */
+
+/* RESPONSIVE */
+@media screen and (max-width:530px){
+
+    header{
+        width: 50px;
+        padding-top: 10px;
+    }
+
+    header::-webkit-scrollbar{
+        display: none;
+    }
+
+    .logo{
+        display: none;
+    }
+    
+    .logo-small{
+        display: inline;
+        width: 80%;
+        margin-top: 5px;
+    }
+
+    .d-none{
+        display: none;
+    }
+
+    .home img{
+        width: 80%;
+        margin-top: 10px;
+    }
+
+    h1, .playlist-container, .play-list {
+        display:none;
+    }
+
+    .header-top, .header-bottom{
+        margin-left: 11px;
+    }
+
+    .header-top{
+        height: calc(100% - 76px);
+    }
+
+    .header-bottom img{
+        width: 19px;
+    }
+
+    .header-bottom a img{
+        margin-left: 1px;
+        margin-bottom: 15px;
+    }
+
+    main::-webkit-scrollbar{
+        display: none;
+    }
+}
+
+@media screen and (min-width:900px){
+    
+}
+/* RESPONSIVE */
+
