@@ -24,13 +24,13 @@ body{
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 15px;
 }
 
-.top-main{
-    min-height: 90px;
-    background-color: #080B12;
-    text-align: right;
-    padding-top: 20px;
+.container-large{
+    max-width: 1400px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .btn{
@@ -58,6 +58,10 @@ body{
     width: 100%;
     flex-wrap: wrap;
 }
+
+#pd-b{
+    padding-bottom: 20px;
+}
 /* GENERAL */
 
 /* TYPO */
@@ -72,12 +76,18 @@ h2{
     color: white;
     padding-top: 30px;
     padding-bottom: 50px;
+    padding-left: 15px;
 }
 
 h4{
     color: white;
     font-size: 15px;
     padding-top: 15px;
+}
+
+h6{
+    color: white;
+    font-size: 14px;
 }
 /* TYPO */
 
@@ -214,6 +224,13 @@ main::-webkit-scrollbar{
     display: none;
 }
 
+.top-main{
+    min-height: 90px;
+    background-color: #080B12;
+    text-align: right;
+    padding-top: 25px;
+}
+
 .list ul{
     list-style: none;
     text-align: center;
@@ -221,6 +238,7 @@ main::-webkit-scrollbar{
     justify-content: center;
     display: flex;
     padding-top: 10px;
+    flex-wrap: wrap;
 }
 
 nav li{
@@ -249,6 +267,7 @@ nav li{
     padding-bottom: 15px;
     color: #7A7C81;
     font-size: 12px;
+    padding-left: 15px;
 }
 /* MAIN */
 
@@ -262,6 +281,25 @@ footer{
     z-index: 10;
 }
 
+.footer-left{
+    justify-content: flex-start;
+}
+
+.col-small{
+    width: 5%;
+    padding-top: 15px;
+    padding-left: 8px;
+}
+
+.song-description{
+    padding-left: 10px;
+    padding-top: 15px;
+}
+
+.song-description p{
+    color: #7A7C81;
+    font-size: 9px;
+}
 /* FOOTER */
 
 /* RESPONSIVE */
