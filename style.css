@@ -458,7 +458,7 @@ footer{
     display: block;
 }
 
-.real-bar:hover{
+.bar:hover .real-bar{
     background-color: lime;
 }
 
@@ -591,4 +591,3 @@ a:hover, li:hover{
     }
 }
 /* RESPONSIVE */
-
