@@ -30,7 +30,6 @@ body{
 .container-large{
     max-width: 1400px;
     display: flex;
-    justify-content: space-between;
 }
 
 .btn{
@@ -234,6 +233,10 @@ main::-webkit-scrollbar{
     text-align: right;
     padding-top: 20px;
     padding-right: 10px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
 }
 
 .list ul{
@@ -248,6 +251,16 @@ main::-webkit-scrollbar{
 
 nav li{
     color: #7A7C81;
+}
+
+nav li:first-child::after{
+    display: block;
+    content: "";
+    height: 3px;
+    width: 40px;
+    background-color: #ADFF2F;
+    margin: auto;
+    margin-top: 2px;
 }
 
 .description-img{
@@ -287,19 +300,19 @@ footer{
 }
 
 .col-small{
-    width: 20%;
-    display: flex;
+    width: 25%;
 }
+
 .col-small img{
     padding-top: 15px;
     padding-left: 10px;
     padding-bottom: 15px;
     width: 30%;
+    max-width: 60px;
 }
 
 .song-description{
     padding-left: 10px;
-    padding-top: 32px;
 }
 
 .song-description p{
@@ -307,20 +320,24 @@ footer{
     font-size: 9px;
 }
 
+.footer-left{
+    align-items: center;
+    height: 100%;
+}
+
 .footer-left .icons{
     color: #7A7C81;
-    padding-left: 40px;
+    padding-left: 15px;
     gap: 15px;
     align-items: center;
 }
 
 .col-big{
-    width: 60%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-right: 10px;
 }
 
 .timing_btns{
@@ -366,18 +383,29 @@ footer{
 .footer-right{
    display: flex;
    align-items: center;
-   max-width: 230px;
+   height: 100%;
 } 
 
 .footer-right .icons{
     color: white;
     gap: 15px;
     padding-right: 15px;
-    width: 20%;
 }
 
-.sound{
-    width: 80%;
+.sound-bar{
+    height: 4px;
+    width: 50%;
+    background-color: #5A5A5A;
+    display: flex;
+    border-radius: 2px;
+    flex-wrap: wrap;
+}
+
+.sound-bar-inner{
+    width: 20%;
+    height: 4px;
+    background-color: white;
+    border-radius: 2px;
 }
 /* FOOTER */
 
@@ -387,7 +415,6 @@ footer{
     .col-img{
         width: calc(100% / 4 - 16px);
     }
-    
 }
 
 @media screen and (max-width:630px){
@@ -398,9 +425,10 @@ footer{
 
     .footer-left .icons{
         display: block;
-        padding-top: 30px;
         padding-left: 10px;
     }
+
+
 }
 
 @media screen and (max-width:530px){
