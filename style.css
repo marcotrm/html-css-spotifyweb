@@ -45,6 +45,10 @@ body{
     width: calc(100% / 6 - 16px);
 }
 
+.col-img img{
+    display: block;
+}
+
 .gap{
     gap: 15px;
 }
@@ -60,6 +64,11 @@ body{
 
 #pd-b{
     padding-bottom: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: #7D7F84;
 }
 /* GENERAL */
 
@@ -287,6 +296,8 @@ nav li:first-child::after{
     font-size: 12px;
     padding-left: 15px;
 }
+
+
 /* MAIN */
 
 /* FOOTER */
@@ -380,6 +391,17 @@ footer{
     position: absolute;
 }
 
+.joystick {
+    width: 13px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    top: -4px;
+    display: none;
+}
+
 .footer-right{
    display: flex;
    align-items: center;
@@ -391,23 +413,82 @@ footer{
     gap: 15px;
     padding-right: 15px;
 }
-
-.sound-bar{
-    height: 4px;
-    width: 50%;
-    background-color: #5A5A5A;
-    display: flex;
-    border-radius: 2px;
-    flex-wrap: wrap;
-}
-
-.sound-bar-inner{
-    width: 20%;
-    height: 4px;
-    background-color: white;
-    border-radius: 2px;
-}
 /* FOOTER */
+
+/* HOVER */
+.listoverlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    opacity: 0;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: none;
+    cursor: pointer;
+}
+
+.albumcover{
+    position: relative;
+}
+
+.albumcover:hover .listoverlay{
+    opacity: 1;
+}
+
+.bar:hover .joystick{
+    display: block;
+}
+
+.real-bar:hover{
+    background-color: lime;
+}
+
+a:hover, li:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.footer-left p:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.square-w:hover{
+    background-color: white;
+}
+
+.playlist-container p:hover{
+    color:white
+}
+
+.header-bottom span:hover{
+    color: white
+}
+
+.song-description p:hover{
+    text-decoration: underline;
+}
+
+.footer-left .heart:hover, .folder:hover{
+    color: white;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+
+.play-btn:hover{
+    transform: scale(1.2);
+}
+/* HOVER */
+
+
 
 /* RESPONSIVE */
 @media screen and (max-width:880px){
