@@ -83,7 +83,7 @@ a{
 /* TYPO */
 h1{
     color: white;
-    padding-left: 10px;
+    padding-left: 20px;
     font-size: 20px;
     margin-top: 25px;
 }
@@ -166,7 +166,7 @@ header:hover{
 
 .playlist-container{
     margin-top: 10px;
-    padding-left: 10px;
+    padding-left: 20px;
 }
 
 .square-w{
