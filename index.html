@@ -9,6 +9,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     <!-- google font -->
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font awesome -->
     <link rel="stylesheet" href="style.css">
 </head>
 <div class="flex vh">
@@ -154,15 +157,48 @@
     </main>
 </div>
     <footer class="container-large">
+        <div class="col-small">
         <div class="footer-left flex">
-            <div class="col-small flex">
-                <img src="img/sinister.jpeg" alt="sinister-played" width="100%">
+                <img src="img/sinister.jpeg" alt="sinister-played" width="100%" height="100%">
                     <div class="song-description">
                         <h6>Sinister</h6>
                         <p>Brano Nome</p>
                     </div>
+                <div class="icons flex">
+                    <i class="fa-regular fa-heart"></i> <i class="fa-regular fa-folder"></i>
+                </div>
             </div>
         </div>
+    <div class="col-big">
+        <div class="timing_btns">
+            <i class="fa-solid fa-shuffle"></i>
+            <i class="fa-solid fa-backward-step"></i>
+            <i class="fa-regular fa-circle-play fa-2xl"></i>
+            <i class="fa-solid fa-forward-step"></i>
+            <i class="fa-solid fa-arrow-rotate-right"></i>
+        </div>
+        <div class="timing_bar">
+            <div class="time">0:25</div>
+            <div class="bar">
+                <div class="real-bar"></div>
+            </div>
+            <div class="time">4:35</div>
+        </div>
+    </div>    
+<div class="col-small">
+    <div class="footer-right">
+            <div class="icons flex">
+                <i class="fa-solid fa-list"></i> 
+                <i class="fa-solid fa-display"></i>
+                <i class="fa-solid fa-volume-high"></i>
+            </div>
+        <div class="sound">
+            <div class="bar">
+                <div class="real-bar"></div> 
+            </div>
+        </div>    
+    </div>
+</div>
     </footer>
 </body>
 </html>

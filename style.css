@@ -29,8 +29,8 @@ body{
 
 .container-large{
     max-width: 1400px;
-    margin-right: auto;
-    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
 }
 
 .btn{
@@ -96,6 +96,10 @@ header{
     width: 230px;
     background-color: #000000;
     flex-shrink: 0;
+}
+
+header::-webkit-scrollbar{
+    display: none;
 }
 
 header:hover{
@@ -228,7 +232,8 @@ main::-webkit-scrollbar{
     min-height: 90px;
     background-color: #080B12;
     text-align: right;
-    padding-top: 25px;
+    padding-top: 20px;
+    padding-right: 10px;
 }
 
 .list ul{
@@ -281,24 +286,98 @@ footer{
     z-index: 10;
 }
 
-.footer-left{
-    justify-content: flex-start;
-}
-
 .col-small{
-    width: 5%;
+    width: 20%;
+    display: flex;
+}
+.col-small img{
     padding-top: 15px;
-    padding-left: 8px;
+    padding-left: 10px;
+    padding-bottom: 15px;
+    width: 30%;
 }
 
 .song-description{
     padding-left: 10px;
-    padding-top: 15px;
+    padding-top: 32px;
 }
 
 .song-description p{
     color: #7A7C81;
     font-size: 9px;
+}
+
+.footer-left .icons{
+    color: #7A7C81;
+    padding-left: 40px;
+    gap: 15px;
+    align-items: center;
+}
+
+.col-big{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.timing_btns{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    color: white;
+}
+
+.timing_bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+    width: 60%;
+    font-size: .6rem;
+    max-width: 600px;
+}
+
+.bar{  
+    width: 80%;
+    margin: auto;
+    background-color: #5A5A5A;
+    height: 4px;
+    border-radius: 2px;
+    position: relative;
+}
+
+.time{
+    color: white;
+    font-size: 12px;
+    padding: 0 10px;
+}
+
+.real-bar{
+    width: 20%;
+    background-color: white;
+    height: 4px;
+    border-radius: 2px;
+    position: absolute;
+}
+
+.footer-right{
+   display: flex;
+   align-items: center;
+   max-width: 230px;
+} 
+
+.footer-right .icons{
+    color: white;
+    gap: 15px;
+    padding-right: 15px;
+    width: 20%;
+}
+
+.sound{
+    width: 80%;
 }
 /* FOOTER */
 
@@ -315,6 +394,12 @@ footer{
 
     .col-img{
         width: calc(100% / 2 - 16px);
+    }
+
+    .footer-left .icons{
+        display: block;
+        padding-top: 30px;
+        padding-left: 10px;
     }
 }
 
