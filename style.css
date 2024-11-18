@@ -70,6 +70,14 @@ a{
     text-decoration: none;
     color: #7D7F84;
 }
+
+.btns{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
 /* GENERAL */
 
 /* TYPO */
@@ -472,20 +480,20 @@ a:hover, li:hover{
     cursor: pointer;
 }
 
-.square-w:hover{
-    background-color: white;
-}
-
-.playlist-container p:hover{
-    color:white
-}
-
 .header-bottom span:hover{
-    color: white
+    color: white;
 }
 
 .song-description p:hover{
     text-decoration: underline;
+}
+
+.playlist-container p:hover{
+    color: white;
+}
+
+.square-w:hover{
+    background-color: white;
 }
 
 .footer-left .heart:hover, .folder:hover{
@@ -588,6 +596,10 @@ a:hover, li:hover{
 
     .header-top li{
         padding-left: 0px;
+    }
+
+    .home li:not(:first-child):hover{
+        border: none;
     }
 }
 /* RESPONSIVE */
